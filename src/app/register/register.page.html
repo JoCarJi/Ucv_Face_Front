@@ -1,0 +1,45 @@
+<ion-content class="icocon">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-md="6">
+        <div class="formulario">
+          <div class="login-form">
+            <form [formGroup]="formLoginUser">
+              <div class="form-header">
+                <div class="ucv-logo">
+                  <img src="assets/face_time.png" alt="Logo" />
+                </div>
+              </div>
+              <ion-label>NOMBRE DE USUARIO</ion-label>
+              <div class="form-group">
+                <ion-input type="text" formControlName="usuario" required >
+                  <ion-icon
+                    slot="start"
+                    name="person-circle-outline"
+                  ></ion-icon>
+                </ion-input>
+              </div>
+              <ion-label>CONTRASEÑA</ion-label>
+              <div class="form-group">
+                <ion-input
+                  type="password"
+                  formControlName="pass"
+                  required 
+                  readonly
+                >
+                  <ion-icon slot="start" name="key"></ion-icon>
+                </ion-input>
+              </div>
+              <ion-item lines="none" class="ion-no-padding">
+                <ion-button class="btning" type="submit" (click)="loginUser()">INGRESAR</ion-button>
+              </ion-item>
+            </form>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <app-virtual-keyboard (keyPress)="onVirtualKeyPress($event)"></app-virtual-keyboard>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

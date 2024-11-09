@@ -1,0 +1,35 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-item class="iitdate" lines="none">
+          <ion-label position="stacked">Fecha Inicio:</ion-label>
+          <ion-datetime #fechaInicio display-format="YYYY-MM-DD" picker-format="YYYY-MM-DD" presentation="date"></ion-datetime>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item class="iitdate" lines="none">
+          <ion-label position="stacked">Fecha Final:</ion-label>
+          <ion-datetime #fechaFin display-format="YYYY-MM-DD" picker-format="YYYY-MM-DD" presentation="date"></ion-datetime>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-select #userSelect interface="popover" placeholder="Selecciona un Usuario">
+            <ion-select-option value="0">General</ion-select-option>
+            <ion-select-option 
+              *ngFor="let user of Users; let i = index"
+              [value]="user.idUsuario">{{user.apell}} {{user.nombre}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center">
+        <ion-buttons>
+          <ion-button class="btnmar" (click)="verMarcaciones()">REPORTE DE MARCACIONES</ion-button>
+          <ion-button class="btntar" (click)="verTardanzas()">REPORTE DE TARDANZAS</ion-button>
+          <ion-button class="btnfal" (click)="verFaltas()">REPORTE DE FALTAS</ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

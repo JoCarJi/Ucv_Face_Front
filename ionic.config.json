@@ -1,0 +1,16 @@
+{
+  "name": "Front-End-Reconocimiento",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8100,
+    "https": true,
+    "ssl": {
+      "key": "./key.pem",
+      "cert": "./cert.pem"
+    }
+  }
+}

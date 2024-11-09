@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.icocon {
+  --background: url("/assets/FondoUCVHorario.png") no-repeat center center;
+  --background-size: cover;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100vh;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 30%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.profile-pic {
+  border-radius: 100%;
+  height: 210px;
+  width: 210px;
+  margin: 0 auto 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 35%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+}
+
+ion-button {
+  --background: #eb0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  --box-shadow: none;
+  font-family: "Nunito", sans-serif;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 550;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 20px;
+  width: 100%;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+
+  ion-icon {
+    font-size: 70px;
+  }
+
+  &.user-creation {
+    --background: #062388;
+  }
+
+  &.reports {
+    --background: #EB0000;
+
+
+  }
+
+  &.schedules {
+    --background: #062388;
+
+}
+
+  &.circular-exit {
+    background-color: transparent;
+    border-radius: 100%;
+
+    ion-icon {
+      font-size: 24px;
+    }
+  }
+  &.circular-exit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #EB0000;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ion-icon {
+      font-size: 30px;
+      height: 30px;
+    }
+  }
+}
+

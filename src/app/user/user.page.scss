@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+ion-content {
+  --background: url("/assets/FondoUCVHorario.png") no-repeat center center;
+  --background-size: cover;
+}
+
+ion-button {
+  --box-shadow: none;
+}
+
+.iitimg {
+  height: 410px;
+}
+
+.upload-button {
+  --background: #eb0000;
+}
+
+.register-button {
+  --background: #062388;
+}
+
+.lbltit {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 550;
+}
+
+.container {
+
+  width: 80%;
+  margin: auto;
+  background: transparent;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.photo-section {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.form-section{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.photo-section,
+.form-section {
+  background: #fff;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.photo-section img {
+  width: 450px;
+  height: 400px;
+  margin: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.upload-button,
+.register-button {
+  margin-top: 10px;
+  width: 91%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.form-section ion-item {
+  margin-bottom: 10px;
+}

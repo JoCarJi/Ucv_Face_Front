@@ -1,0 +1,71 @@
+<ion-content>
+  <ion-grid class="container">
+    <ion-row>
+      <ion-col size="12" size-md="4" class="photo-section">
+        <input
+          type="file"
+          (change)="subirFoto($event)"
+          accept="image/*"
+          hidden
+          #fileInput
+        />
+        <ion-item class="iitimg">
+          <img [src]="fotoURL" alt="Profile Photo" />
+        </ion-item>
+        <ion-button
+          (click)="fileInput.click()"
+          class="upload-button"
+          expand="full"
+        >
+          SUBIR FOTO
+        </ion-button>
+        <ion-button class="register-button" expand="full" (click)="registrarUsuario()">
+          REGISTRAR
+        </ion-button>
+      </ion-col>
+      <ion-col size="12" size-md="8" class="form-section">
+        <ion-label class="lbltit">REGISTRO DE NUEVO USUARIO</ion-label>
+        <ion-item>
+          <ion-input type="text" labelPlacement="stacked" label="NOMBRES:" [(ngModel)]="userData.nombre" name="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" labelPlacement="stacked" label="APELLIDOS:" [(ngModel)]="userData.apell" name="apell"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" labelPlacement="stacked" label="USUARIO:" [(ngModel)]="userData.usuario" name="usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input
+            type="password"
+            labelPlacement="stacked"
+            label="CONTRASEÑA:"
+            [(ngModel)]="userData.password"
+            name="password"
+            #passwordInput="ngModel"
+            required
+          ></ion-input>
+          <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)" class="error-message">
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" labelPlacement="stacked" label="CELULAR:" [(ngModel)]="userData.telefono" name="telefono"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" labelPlacement="stacked" label="N° DE DOCUMENTO:" [(ngModel)]="userData.dni" name="dni"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="date" labelPlacement="stacked" label="FECHA DE NACIMIENTO:" [(ngModel)]="userData.fecha_nac" name="fecha_nac"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-select aria-label="Rol" interface="popover" placeholder="Selecciona tu rol" [(ngModel)]="userData.rol" name="rol">
+            <ion-select-option value="sub-administrador">Sub-Administrador</ion-select-option>
+            <ion-select-option value="Docente">Docente</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" labelPlacement="stacked" label="EMAIL:" [(ngModel)]="userData.email" name="departamento"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

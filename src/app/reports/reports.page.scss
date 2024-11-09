@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+ion-grid{
+  background: white;
+  width: 75%;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.856);
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+ion-content {
+  --background: url("/assets/FondoUCVHorario.png") no-repeat center center;
+  --background-size: cover;
+  font-family: "Nunito", sans-serif;
+  ion-grid {
+    padding: 20px;
+  }
+
+  ion-row {
+    ion-col {
+      ion-item {
+        --background: transparent;
+        border-radius: 8px;
+        ion-label {
+          color: #1e1e2f;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        ion-datetime,
+        ion-select {
+          border-radius: 8px;
+        }
+
+        ion-select::part(placeholder) {
+          color: #000000;
+          font-weight: 500;
+        }
+      }
+
+      &.ion-text-center {
+        ion-button {
+          color: white;
+          width: 60%;
+          height: 40px;
+          border-radius: 8px;
+          font-weight: bold;
+          font-size: 1.2rem;
+          --box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.btnmar,
+.btnfal {
+  background-color: #062388;
+}
+
+.btntar {
+  background-color: #eb0000;
+}
+
+.iitdate {
+    --background: transparent;
+    width: 70%;
+    height: auto;
+}

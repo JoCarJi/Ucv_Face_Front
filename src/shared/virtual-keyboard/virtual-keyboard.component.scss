@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.virtual-keyboard-container {
+  background-color: white;
+  border-radius: 10px;
+  width: 350px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.virtual-keyboard-container h2 {
+  font-family: "Nunito", sans-serif;
+  color: red;
+  font-size: 20px;
+  font-weight: 550;
+  text-align: center;
+}
+
+.virtual-keyboard-container .input-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.virtual-keyboard-container .input-dots span {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+.virtual-keyboard-container .input-dots .filled {
+  background-color: gray;
+}
+
+.virtual-keyboard-container .keypad {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  grid-template-areas:
+    "key1 key2 key3 key4 key5 erase1"
+    "key6 key7 key8 key9 key0 erase2";
+}
+
+.virtual-keyboard-container .keypad button {
+  background-color: #cc7878;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.virtual-keyboard-container .keypad button:hover {
+  background-color: #361c1c;
+}
+
+.virtual-keyboard-container .btn-erase {
+  grid-area: erase1;
+  
+}
+
+.virtual-keyboard-container .btn-clear {
+  grid-area: erase2;
+}

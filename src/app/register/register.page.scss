@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.icocon {
+  --background: url("/assets/FondoUCVHorario.png") no-repeat center center;
+  --background-size: cover;
+}
+
+ion-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  flex-direction: row;
+}
+
+ion-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  flex-direction: row;
+}
+.formulario {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 30px;
+  padding-top: 10px;
+  border-radius: 10px;
+  width: 800px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.image {
+  background-color: #fff;
+  padding: 30px;
+  width: 390px;
+  height: 350px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form,
+.image {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  flex-basis: 50%;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+ion-label{
+  font-size: 13px;
+  font-weight: 550;
+  margin-left: 25px;
+  font-family: "Nunito", sans-serif;
+}
+
+ion-icon{
+  width: 40px;
+  height: 25px;
+  font-family: "Nunito", sans-serif;
+}
+
+ion-button {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  --border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  height: 55px;
+  font-size: medium;
+  --box-shadow: none;
+  --background: #eb0000;
+  font-family: "Nunito", sans-serif;
+}
+
+.ion-item {
+  width: 100%;
+}
+
+.ucv-logo {
+  margin-top: 40px;
+  width: 180px;
+  height: 140px;
+  margin: auto;
+}
+

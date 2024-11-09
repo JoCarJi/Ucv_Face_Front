@@ -1,0 +1,23 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-item class="iitdate" lines="none">
+          <ion-label position="stacked">Fecha Inicio:</ion-label>
+          <ion-datetime #fechaInicio display-format="YYYY-MM-DDTHH:mm" picker-format="YYYY-MM-DDTHH:mm" presentation="date"></ion-datetime>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item class="iitdate" lines="none">
+          <ion-label position="stacked">Fecha Final:</ion-label>
+          <ion-datetime #fechaFin display-format="YYYY-MM-DDTHH:mm" picker-format="YYYY-MM-DDTHH:mm" presentation="date"></ion-datetime>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center">
+        <ion-buttons>
+          <ion-button class="btnmar" (click)="verAsistencia()">VER ASISTENCIA</ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

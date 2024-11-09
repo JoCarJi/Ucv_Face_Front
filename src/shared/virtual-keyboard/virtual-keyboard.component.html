@@ -1,0 +1,21 @@
+<div class="virtual-keyboard-container">
+  <h2>TECLADO VIRTUAL</h2>
+  <p>Clave de 8 dígitos</p>
+  <div class="input-dots">
+    <span *ngFor="let dot of dots" [class.filled]="dot"></span>
+  </div>
+  <div class="keypad">
+    <button class="btnnum" (click)="onKeyPress('9')" style="grid-area: key1;">9</button>
+    <button class="btnnum" (click)="onKeyPress('4')" style="grid-area: key2;">4</button>
+    <button class="btnnum" (click)="onKeyPress('2')" style="grid-area: key3;">2</button>
+    <button class="btnnum" (click)="onKeyPress('0')" style="grid-area: key4;">0</button>
+    <button class="btnnum" (click)="onKeyPress('8')" style="grid-area: key5;">8</button>
+    <button class="btn-erase" (click)="onClear()" style="grid-area: erase1;">&#9003;</button>
+    <button class="btnnum" (click)="onKeyPress('5')" style="grid-area: key6;">5</button>
+    <button class="btnnum" (click)="onKeyPress('6')" style="grid-area: key7;">6</button>
+    <button class="btnnum" (click)="onKeyPress('7')" style="grid-area: key8;">7</button>
+    <button class="btnnum" (click)="onKeyPress('3')" style="grid-area: key9;">3</button>
+    <button class="btnnum" (click)="onKeyPress('1')" style="grid-area: key0;">1</button>
+    <button class="btn-clear" (click)="onClearAll()" style="grid-area: erase2;">&#x2716;</button>
+  </div>
+</div>
